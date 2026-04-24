@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Inventario - CRUD</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="icon-placeholder"></div>
+            <h1>Sistema de Inventario</h1>
+            <p>Gestiona tus productos de manera fácil y rápida</p>
+        </header>
+
+        <section>
+            <h2>
+                <div class="icon-heading icon-green"></div>
+                Nuevo Producto
+            </h2>
+            <form id="formulario-producto">
+                <div class="input-group">
+                    <label for="nombre-producto">Nombre del producto</label>
+                    <input type="text" id="nombre-producto" placeholder="Ej: Laptop Lenovo">
+                </div>
+                <div class="input-group">
+                    <label for="precio-producto">Precio (S/.)</label>
+                    <input type="text" id="precio-producto" placeholder="Ej: 2500">
+                </div>
+                <div class="input-group">
+                    <label for="stock-producto">Stock</label>
+                    <input type="text" id="stock-producto" placeholder="Ej: 10">
+                </div>
+                <button type="submit" id="btn-guardar">
+                    <div class="icon-save"></div>
+                    <span>Guardar Producto</span>
+                </button>
+            </form>
+        </section>
+
+        <section>
+            <h2>
+                <div class="icon-heading icon-blue"></div>
+                Lista de Productos
+            </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Precio (S/.)</th>
+                        <th>Stock</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-productos">
+                    <tr>
+                        <td>1</td>
+                        <td>Laptop Lenovo</td>
+                        <td>2500.00</td>
+                        <td>10</td>
+                        <td>
+                            <button class="btn-action btn-editar"><div class="icon-action"></div>Editar</button>
+                            <button class="btn-action btn-eliminar"><div class="icon-action"></div>Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Mouse Inalámbrico</td>
+                        <td>50.00</td>
+                        <td>25</td>
+                        <td>
+                            <button class="btn-action btn-editar"><div class="icon-action"></div>Editar</button>
+                            <button class="btn-action btn-eliminar"><div class="icon-action"></div>Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Teclado Mecánico</td>
+                        <td>150.00</td>
+                        <td>15</td>
+                        <td>
+                            <button class="btn-action btn-editar"><div class="icon-action"></div>Editar</button>
+                            <button class="btn-action btn-eliminar"><div class="icon-action"></div>Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Monitor 24 pulgadas</td>
+                        <td>600.00</td>
+                        <td>8</td>
+                        <td>
+                            <button class="btn-action btn-editar"><div class="icon-action"></div>Editar</button>
+                            <button class="btn-action btn-eliminar"><div class="icon-action"></div>Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Audífonos Gamer</td>
+                        <td>120.00</td>
+                        <td>20</td>
+                        <td>
+                            <button class="btn-action btn-editar"><div class="icon-action"></div>Editar</button>
+                            <button class="btn-action btn-eliminar"><div class="icon-action"></div>Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <footer>
+            © 2024 Sistema de Inventario - CRUD con Node.js, Express y SQLite
+        </footer>
+    </div>
+
+</body>
+</html>

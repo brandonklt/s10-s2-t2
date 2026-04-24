@@ -1,0 +1,230 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #fff;
+    max-width: 1000px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.icon-placeholder {
+    width: 50px;
+    height: 50px;
+    background-color: #d1b899; /* Color de la caja (logo) */
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #777;
+    font-size: 16px;
+}
+
+/* Secciones de tarjetas (Formulario y Tabla) */
+section {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+section h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-heading {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.icon-green {
+    background-color: #28a745;
+    color: #28a745;
+}
+
+.icon-blue {
+    background-color: #007bff;
+    color: #007bff;
+}
+
+/* Formulario "Nuevo Producto" */
+#formulario-producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.input-group {
+    flex: 1 1 calc(25% - 15px);
+    min-width: 150px;
+}
+
+#formulario-producto label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+    font-size: 14px;
+}
+
+#formulario-producto input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+
+#formulario-producto input:focus {
+    outline: none;
+    border-color: #28a745;
+    background-color: #fff;
+}
+
+#btn-guardar {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    height: 48px; /* Mismo alto que los inputs + su label */
+}
+
+#btn-guardar:hover {
+    background-color: #218838;
+}
+
+#btn-guardar span {
+    margin-left: 8px;
+}
+
+.icon-save {
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+/* Tabla "Lista de Productos" */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+th, td {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #e8f4fd; /* Fondo de cabecera azul claro */
+    font-weight: bold;
+    color: #333;
+}
+
+/* Botones de acción (Editar y Eliminar) */
+.btn-action {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 5px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.icon-action {
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.btn-editar {
+    background-color: #ffc107; /* Amarillo */
+    color: white;
+}
+
+.btn-editar .icon-action {
+    background-color: white;
+}
+
+.btn-editar:hover {
+    background-color: #e0a800;
+}
+
+.btn-eliminar {
+    background-color: #dc3545; /* Rojo */
+    color: white;
+}
+
+.btn-eliminar .icon-action {
+    background-color: white;
+}
+
+.btn-eliminar:hover {
+    background-color: #c82333;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #888;
+    font-size: 13px;
+}
